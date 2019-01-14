@@ -1,0 +1,33 @@
+lda 0000h
+mov b,a
+mvi c, 00h
+
+loop1: inr c
+mvi d, 0
+lxi h, 0001h
+	
+	loop2: inr l
+	inr d
+	mov a, m
+	inr l
+	mov e, m
+	dcr l
+	cmp e
+	jc swap
+
+	mov a, d
+	cmp b
+	jc loop2
+	
+lxi h, 0000h
+mov a,c
+cmp b
+jc loop1
+hlt
+
+swap:	mov m, e
+	inr l
+	mov m, a
+	dcr l
+	cmp a
+	jz loop2

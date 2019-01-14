@@ -1,0 +1,19 @@
+
+;<Practical 3>
+
+;jmp start
+
+;data
+
+
+;code
+;start: nop
+
+
+;hlt
+
+MVI A, 05H
+SUI 06H
+;ADD B
+;STA 9000H
+HLT

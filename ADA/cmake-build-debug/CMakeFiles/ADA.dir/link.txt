@@ -1,0 +1,1 @@
+/bin/c++  -g   CMakeFiles/ADA.dir/quicksort1.cpp.o CMakeFiles/ADA.dir/heapsort.cpp.o  -o ADA 

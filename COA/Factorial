@@ -1,0 +1,14 @@
+lda 0000h
+mov b, a
+mov c, b	; multiply with
+dcr c
+loop1:  mov d, c
+	sub a
+	loop2: add b
+		dcr d
+		jnz loop2
+	mov b, a
+	dcr c
+	jnz loop1
+sta 0001h
+hlt

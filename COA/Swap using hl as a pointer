@@ -1,0 +1,8 @@
+lxi h, 0000
+mov b, m
+lda 0001h
+sta 0000h
+inr l
+mov a, b
+sta 0001h
+hlt

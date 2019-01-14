@@ -1,0 +1,18 @@
+mvi a, 03h
+sta 0000h
+mvi a, 05h
+sta 0001h
+mov b, a	;move contents of a into b
+lda 0000h
+mvi c, 01h
+mov d, a
+
+loop: lda 0002h
+add d
+sta 0002h
+mov a, c
+inr c
+cmp b
+jc loop
+
+hlt

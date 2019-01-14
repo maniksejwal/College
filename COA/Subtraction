@@ -1,0 +1,13 @@
+mvi a, 02h
+mvi b, 01h
+sub b
+cmp b
+jc borrow
+sta 0002H
+mvi a, 0
+sta 0003H 
+hlt
+
+borrow: mvi a, 1
+sta 0003H
+hlt
