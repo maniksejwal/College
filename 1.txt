@@ -1,0 +1,62 @@
+what is linux
+Linux is a kernel that was created by Linus Torvalds as an open source project. The term is often used to refer to 
+operating systems (distributions/distros) that run using 'the kernel'. Some popular distros are RHEL, Fedora, 
+SUSE, CentOS, Debian, Arch, Ubuntu, Manjaro, ElementaryOS and Deepin. 
+
+whats is linux shell or terminal
+shell - program that allows you to run other system instructions
+
+table of 30 basic linux commands along with functionality
+1	pwd		pwd		home
+2	ls		ls -la		
+3	cd		cd 
+4	rm		sudo rm -rf /
+5	mkdir
+6	su
+7	sudo
+8	rmdir
+9	touch
+10	man
+11	cp
+12	mv
+13	echo
+14	cat
+15	df
+16	du
+17	tar
+18	uname
+19	whois
+20	yaourt
+21	apt
+22	ap-get
+23	chmod
+24	pacman
+25	namo
+26	vim
+27	gedit
+28	gnome-system-manager
+29	ping
+30	ln
+31	rename
+32	chown
+33	find
+34	grep
+35	locate
+36	mount
+37	frac
+38	date
+39	passwd
+40	ps
+41	source
+42	kill
+43	reboot
+44	poweroff
+45	clear
+56	shutdown
+
+
+du
+du hast
+du hast mich 
+du hast mich gefragt
+du hast mich gefragt und ich nicht gestat
