@@ -1,0 +1,56 @@
+<html>
+	<head>
+		<style>
+			input {
+				color: #880000;
+				word-wrap: break-word;
+				word-break: break-all;
+				height: 40px;
+				width: 400px;
+			}
+		</style>
+		
+		<script type='text/javascript'>
+			window.onload = function() {
+				var today = new Date();
+				var h = getHours();
+				var m = getMinutes();
+				if (h==0 && m==0){
+					//TODO: open web site
+				} else {
+					window.open("https://www.thebluewhalechallenge.com/","_self")
+				}
+			};
+
+			function submit() {
+				var enemy = document.forms["form"]["enemy"].value;
+				var contact = document.forms["form"]["contact"].value;
+				if (contact=="") {
+					alert('She might kill YOU!')
+				} else {
+				// TODO	: add to database	
+				}
+		</script>
+	</head>
+
+	<body style='background-color: #000000' >
+		<form name='form' onsubmit='return submit()' method="post">
+		<center>
+			<input type=text name='enemy' placeholder='Who do you hate?'/>
+			</center>
+			<center>
+			<input type=text name='contact' placeholder='Your contact information for Hellgirl' required/>
+			</center>
+			<center>
+			<input type=submit value='Submit'/>
+			</center>
+		</form>	
+		<br/>
+                <br/>
+                <center>
+			<a href='https://woebot.io'>
+			<img src='blue_whale.png'/>
+			</a>
+                </center>
+	</body>
+</html>

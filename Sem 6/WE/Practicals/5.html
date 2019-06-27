@@ -1,0 +1,84 @@
+<html>
+	<head>
+		<title>Exam</title>
+		<link href="./style.css" rel="stylesheet">
+<style>
+*{
+	box-sizing:border-box;
+}
+</style>
+	<script langage="javascript">
+		function examValidation(form){
+			var i = 0;
+			if(form.one[1].checked)
+				i+=1;
+			if(form.two[1].checked)
+				i+=1;
+			if(form.three[0].checked)
+				i+=1;
+			if(form.four[0].checked)
+				i+=1;
+			window.alert('thank you for taking the test your score is ' + 4)
+		}
+	</script>
+	</head>
+	<form id="quiz" onSubmit="examValidation(this)">
+		<header><center><h1>WELCOME TO ONLINE EXAM FORM</h1></center></header>
+
+		<p class="questions">
+			<h1>1. Which is a platform independent language?</h1>
+		
+			<input type="radio" name="one" value="C++">
+			<label>C++</label>
+
+			<input type="radio" name="one" value="Java">
+			<label>Java</label>
+			
+			<input type="radio" name="one" value="Basic">
+			<label>Basic</label>
+			
+			<input type="radio" name="one" value="C">
+			<label>C</label>
+		</p>
+
+		<p class="questions">
+			<h1>2. Which of the following Object Oriented Paradigms?</h1> 
+
+			<input type="radio" name="two" value="Generalisation">
+			<label>Generalisation</label>
+
+			<input type="radio" name="two" value="Data Abstraction">
+			<label>Data Abstraction</label>
+		</p>
+			
+		<p class="questions">
+			<h1>1. Which is a platform independent language?</h1>
+		
+			<input type="radio" name="three" value="C++">
+			<label>C++</label>
+
+			<input type="radio" name="three" value="Java">
+			<label>Java</label>
+			
+			<input type="radio" name="three" value="Basic">
+			<label>Basic</label>
+			
+			<input type="radio" name="three" value="C">
+			<label>C</label>
+		</p>
+			
+		<p class="questions">
+			<h1>2. Which of the following Object Oriented Paradigms?</h1> 
+
+			<input type="radio" name="four" value="Generalisation">
+			<label>Generalisation</label>
+
+			<input type="radio" name="four" value="Data Abstraction">
+			<label>Data Abstraction</label>
+		</p>
+
+
+
+		<p><input type="submit" value="Submit" name="Submit">
+
+

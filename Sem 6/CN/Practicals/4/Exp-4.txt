@@ -1,0 +1,24 @@
+	Experiment - 4
+
+Aim : Design a Topology of P2P (Point to Point) of two node and CSMA(Carries Sense Multiple Access) Channel (4 Nodes) Specifying Bandwidth 5mpbs and 100 mbps Respectively. Study IP Address assignment mechanism and p-cap file generation process. 
+
+Note: This a multipoint system, this is like BUS. CSMA is the technical logic behind it.
+
+P2P - Dedicated Connection b/w 2 nodes only
+CSMA - BUS Multipoint 
+
+4 Nodes to a common channel 
+
+Role of n1 is gateway node because it is connecting two networks and it is acting as a interface 
+
+CSMA is a MAC(Media Access Control) protocol 
+
+CSMA is one channel shared by all nodes to conmected to it
+
+Command to RUn second.cc
+pc-118@pc118-ThinkCentre-M720t:~/Desktop/ns-allinone-3.28/ns-3.28$ ./waf --run scratch/second
+
+pc-118@pc118-ThinkCentre-M720t:~/Desktop/ns-allinone-3.28/ns-3.28$ ./waf --run scratch/second --vis
+Press F3 to Run Visualization 
+
+p-cap file name : p-cap(node no)-(interface-no)

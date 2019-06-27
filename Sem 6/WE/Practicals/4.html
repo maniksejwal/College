@@ -1,0 +1,106 @@
+<html>
+	<head>
+		<script>
+			function Form_Page(){
+				var name = document.forms["RegForm"]["Name"]
+				var email = document.forms["RegForm"]["Email"]
+				var phone = document.forms["RegForm"]["Telephone"]
+				var what = document.forms["RegForm"]["Subject"]
+				var password = document.forms["RegForm"]["Password"]
+				console.log('initialised element variables')
+				//var M1 = document.forms["RegForm"]["m1"].value;
+				//var M2 = document.forms["RegForm"]["m2"].value;
+				//var M3 = document.forms["RegForm"]["m3"].value;
+				//var M4 = document.forms["RegForm"]["m4"].value;
+				//var M5 = document.forms["RegForm"]["m5"].value;
+				//var M6 = document.forms["RegForm"]["m6"].value;
+				//var M7 = document.forms["RegForm"]["m7"].value;
+				//var M8 = document.forms["RegForm"]["m8"].value;
+
+				if(name.value==""){
+					window.alert("Please enter a valid name.")
+					name.focus()
+					return false
+				}
+				if(email.value==""){
+					window.alert("Please enter a valid email.")
+					email.focus()
+					return false
+				}
+				if(phone.value==""){
+					window.alert("Please enter a valid phone.")
+					phone.focus()
+					return false
+				}
+				if(password.value==""){
+					window.alert("Please enter a valid password.")
+					password.focus()
+					return false
+				}
+				if(what.selected < 1){
+					window.alert("Please select a course.")
+					what.focus()
+					return false
+				}
+
+				//var suma = parseInt(M1) + parseInt(M2) + parseInt(M3) + parseInt(M4) + parseInt(M5) + parseInt(M6) + parseInt(M7) + parseInt(M8) 
+				//var avg = suma/8.0
+				//window.alert("Average CGPA:" + avg);
+				window.alert("Validation complete");
+				return true
+			}
+		</script>
+
+		<style>
+			Form_Page{
+				margin-left:70px;
+				font-weight:bold;
+				float:left;
+				clear:left;
+				width:100px;
+				text-align:left;
+				margin-right:10x;
+				font-family:sans-serif, bold, Arial, Helvetica;
+				font-size:14px;
+			}
+			div{
+				box-sizing:border-box;
+				width:100%;
+				border:100px solid black;
+				float:left;
+				align-content:center;
+				align-items:center;
+			}
+			form{
+				margin:0 auto;
+				width:600px;
+			}
+		</style>
+	</head>
+	<body>
+		<h1 style="text-align:center">REGISTRATION FORM</h1>
+		<form name="RegForm" onsubmit="return Form_Page()" method="post">
+			<p>Name: <input type="text" size=65 name="Name"></p><br>
+			<p>Address: <input type="text" size=65 name="Address"></p></br>
+			<p>E-Mail: <input type="text" size=65 name="Email"></p></br>
+			<p>Password: <input type="text" size=65 name="Password"></p></br>
+			<p>Telephone: <input type="text" size=65 name="Telephone"></p></br>
+
+			<p>SELECT YOUR COURSE
+				<select type="text" value="" name="Subject">
+					<option>BTECH</option>	
+					<option>BBA</option>	
+					<option>BCA</option>	
+					<option>B.COM</option>	
+				</select>
+			</p><br><br>
+			<p>Comments: <textarea cols="55" name="Comment"></textarea></p>
+			<p><input type="submit" value="Submit" name="Submit">
+				<input type="reset" value="Reset" name="Reset">
+			</p>
+		</form>
+	</body>
+</html>
+
+
+

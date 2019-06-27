@@ -1,0 +1,28 @@
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>Current Time</title>
+	</head>
+	<body>
+		<h1>Current Time</h1>
+		<h2 id="time"></h2>
+
+		<script>
+			var time = setInterval(function(){
+				var now = new Date();
+				var hours = now.getHours();
+				var mins = now.getMinutes();
+				var seconds = now.getSeconds();
+
+				document.getElementById("time").innerHTML = hours + " Hours " + mins + " Minutes " + seconds + " Seconds"
+			}, 1000);
+		</script>
+	</body>
+</html>
+	
+
+		
+
+
